@@ -26,7 +26,7 @@ public class GourmetGameApplication {
 		JButton button = new JButton("OK");
 		button.setBounds(70, 50, 150, 50);
 		
-		Game game = GameFactory.newGame(new SwingGameInput(screen));
+		final Game game = GameFactory.newGame(new SwingGameInput(screen));
 		button.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {

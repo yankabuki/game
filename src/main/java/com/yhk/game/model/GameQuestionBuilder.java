@@ -9,8 +9,8 @@ public class GameQuestionBuilder extends Game {
 	@Override
 	public void question() {
 		
-		String dish = gameInput.getTextAnswer("Qual prato você pensa?");
-		String attribute = gameInput.getTextAnswer(String.format("%s é ____ mas %s não.", dish, parent.requestedAttribute));
+		String dish = gameInput.getTextAnswer("Qual prato voce pensa?");
+		String attribute = gameInput.getTextAnswer(String.format("%s e ____ mas %s nao.", dish, parent.requestedAttribute));
 		
 		Game newResponse = new GameQuestion(attribute, this);
 		newResponse.setYes(new GameQuestion(dish, newResponse));

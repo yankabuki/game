@@ -17,7 +17,7 @@ public class GameQuestion extends Game {
 	
 	@Override
 	public void question() {
-		Integer response = gameInput.getYesNoAnswer(String.format("O prato que você pensou é %s?", requestedAttribute));
+		Integer response = gameInput.getYesNoAnswer(String.format("O prato que voce pensou e %s?", requestedAttribute));
 		pickChoice(response);
 	}
 }

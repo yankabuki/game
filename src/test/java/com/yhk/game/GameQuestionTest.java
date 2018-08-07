@@ -41,8 +41,8 @@ public class GameQuestionTest {
 		game.question();
 		verify(gameInputMock).getYesNoAnswer(contains("massa"));
 		verify(gameInputMock).getYesNoAnswer(contains("lasanha"));
-		verify(gameInputMock).getTextAnswer(contains("Qual prato você pensa?"));
-		verify(gameInputMock).getTextAnswer(contains("pastel é ____ mas lasanha não."));
+		verify(gameInputMock).getTextAnswer(contains("Qual prato voce pensa?"));
+		verify(gameInputMock).getTextAnswer(contains("pastel e ____ mas lasanha nao."));
 	}
 	
 	@Test
